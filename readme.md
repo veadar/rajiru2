@@ -24,3 +24,4 @@ Downloadをクリック → [Download](https://github.com/veadar/rajiru2/release
 - [mpv](https://mpv.io)
 - [らじる らじるのXML](http://www3.nhk.or.jp/netradio/app/config_pc.xml)
 - [指定URLのJSONをダウンロードしてRecordに変換 v2](http://piyocast.com/as/archives/3953)
+- [plist handler.applescript](https://github.com/veadar/AppleScript/blob/master/plist%20handler.applescript)
