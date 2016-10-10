@@ -25,3 +25,4 @@ Downloadをクリック → [Download](https://github.com/veadar/rajiru2/release
 - [らじる らじるのXML](http://www3.nhk.or.jp/netradio/app/config_pc.xml)
 - [指定URLのJSONをダウンロードしてRecordに変換 v2](http://piyocast.com/as/archives/3953)
 - [plist handler.applescript](https://github.com/veadar/AppleScript/blob/master/plist%20handler.applescript)
+- [szk-3/defaultsRead_Write_Delete.scpt](https://gist.github.com/szk-3/ce0770240ec1eecff3e0)
