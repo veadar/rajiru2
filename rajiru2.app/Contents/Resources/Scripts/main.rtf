@@ -1,0 +1,1551 @@
+{\rtf1\ansi\ansicpg932\cocoartf1504
+{\fonttbl\f0\fnil\fcharset0 Verdana;\f1\fnil\fcharset128 HiraginoSans-W3;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red64\green128\blue0;\red0\green0\blue255;
+\red76\green78\blue78;\red108\green5\blue211;\red0\green22\blue176;\red128\green0\blue128;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c0\c0\c0;\csgenericrgb\c25000\c50001\c0;\csgenericrgb\c0\c0\c100000;
+\csgenericrgb\c29999\c30457\c30457;\csgenericrgb\c42337\c1841\c82833;\csgenericrgb\c0\c8656\c68986;\csgenericrgb\c50001\c0\c50001;}
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf2 \CocoaLigature0 property
+\b0  \cf3 bID\cf2  : "com.apple.ScriptEditor.id.rajiru2"\
+
+\b property
+\b0  \cf3 start_time\cf2  : 604800\
+
+\b property
+\b0  \cf3 previous_time\cf2  : 1\
+
+\b property
+\b0  \cf3 nextStreamURL\cf2  : 
+\i \cf4 missing value
+\i0 \cf2 \
+
+\b property
+\b0  \cf3 nextTitle\cf2  : 
+\i \cf4 missing value
+\i0 \cf2 \
+\cf5 -- Created 2016-02-06 by Takaaki Naganoya\cf2 \
+\cf5 -- 2016 Piyomaru Software\cf2 \
+
+\b use
+\b0  \cf6 AppleScript\cf2  \cf4 version\cf2  "2.4"\
+
+\b use
+\b0  
+\i \cf4 scripting additions
+\i0 \cf2 \
+
+\b use
+\b0  
+\i \cf4 framework
+\i0 \cf2  "Foundation"\
+\
+
+\b on
+\b0  \cf3 doInit\cf2 ()\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	\
+	
+\b try
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b return
+\b0  
+\b my
+\b0  \cf3 defaultsRead\cf2 (\cf3 bID\cf2 ) \cf5 --try
+\f1 \'82\'f0\'82\'b5\'82\'ad\'82\'b6\'82\'e9\'82\'c6\'82\'a2\'82\'a4\'82\'b1\'82\'c6\'82\'cd
+\f0 plist
+\f1 \'83\'74\'83\'40\'83\'43\'83\'8b\'82\'aa\'82\'c8\'82\'a2\'82\'c6\'91\'7a\'92\'e8
+\f0 \cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b on
+\b0  
+\b error
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		\cf3 plistWrite\cf2 (\cf3 bID\cf2 , "isSetting", "true") \cf5 --
+\f1 \'8d\'c5\'8f\'89\'82\'c9
+\f0 plist
+\f1 \'83\'74\'83\'40\'83\'43\'83\'8b\'82\'f0\'8d\'ec\'82\'c1\'82\'c4\'82\'a8\'82\'a9\'82\'c8\'82\'a2\'82\'c6\'8c\'e3\'82\'c5\'82\'b1\'82\'af\'82\'e9\'82\'bd\'82\'df
+\f0  
+\f1 \'83\'5f\'83\'7e\'81\'5b\'83\'65\'83\'4c\'83\'58\'83\'67
+\f0 \cf2 \
+		\
+		
+\b set
+\b0  \cf3 areaRecord\cf2  
+\b to
+\b0  \{\{\cf6 name\cf2 :"
+\f1 \'8e\'44\'96\'79
+\f0 ", \cf3 areakey\cf2 :"010", \cf3 r1hls\cf2 :"http://netradioikr1-i.akamaihd.net/hls/live/247977/1-r1/1-r1-01.m3u8", \cf3 r2hls\cf2 :"http://netradior2p-i.akamaihd.net/hls/live/200454/1-r2/1-r2-01.m3u8", \cf3 fmhls\cf2 :"http://netradioikfm-i.akamaihd.net/hls/live/247978/1-fm/1-fm-01.m3u8"\}, \{\cf6 name\cf2 :"
+\f1 \'90\'e5\'91\'e4
+\f0 ", \cf3 areakey\cf2 :"040", \cf3 r1hls\cf2 :"http://netradiohkr1-i.akamaihd.net/hls/live/208073/1-r1/1-r1-01.m3u8", \cf3 r2hls\cf2 :"http://netradior2p-i.akamaihd.net/hls/live/200454/1-r2/1-r2-01.m3u8", \cf3 fmhls\cf2 :"http://netradiohkfm-i.akamaihd.net/hls/live/208074/1-fm/1-fm-01.m3u8"\}, \{\cf6 name\cf2 :"
+\f1 \'93\'8c\'8b\'9e
+\f0 ", \cf3 areakey\cf2 :"130", \cf3 r1hls\cf2 :"http://netradior1p-i.akamaihd.net/hls/live/200452/1-r1/1-r1-01.m3u8", \cf3 r2hls\cf2 :"http://netradior2p-i.akamaihd.net/hls/live/200454/1-r2/1-r2-01.m3u8", \cf3 fmhls\cf2 :"http://netradiofmp-i.akamaihd.net/hls/live/200456/1-fm/1-fm-01.m3u8"\}, \{\cf6 name\cf2 :"
+\f1 \'96\'bc\'8c\'c3\'89\'ae
+\f0 ", \cf3 areakey\cf2 :"230", \cf3 r1hls\cf2 :"http://netradiockr1-i.akamaihd.net/hls/live/208071/1-r1/1-r1-01.m3u8", \cf3 r2hls\cf2 :"http://netradior2p-i.akamaihd.net/hls/live/200454/1-r2/1-r2-01.m3u8", \cf3 fmhls\cf2 :"http://netradiockfm-i.akamaihd.net/hls/live/208072/1-fm/1-fm-01.m3u8"\}, \{\cf6 name\cf2 :"
+\f1 \'91\'e5\'8d\'e3
+\f0 ", \cf3 areakey\cf2 :"270", \cf3 r1hls\cf2 :"http://netradiobkr1-i.akamaihd.net/hls/live/208069/1-r1/1-r1-01.m3u8", \cf3 r2hls\cf2 :"http://netradior2p-i.akamaihd.net/hls/live/200454/1-r2/1-r2-01.m3u8", \cf3 fmhls\cf2 :"http://netradiobkfm-i.akamaihd.net/hls/live/208070/1-fm/1-fm-01.m3u8"\}, \{\cf6 name\cf2 :"
+\f1 \'8d\'4c\'93\'87
+\f0 ", \cf3 areakey\cf2 :"340", \cf3 r1hls\cf2 :"http://netradiofkr1-i.akamaihd.net/hls/live/247615/1-r1/1-r1-01.m3u8", \cf3 r2hls\cf2 :"http://netradior2p-i.akamaihd.net/hls/live/200454/1-r2/1-r2-01.m3u8", \cf3 fmhls\cf2 :"http://netradiofkfm-i.akamaihd.net/hls/live/247617/1-fm/1-fm-01.m3u8"\}, \{\cf6 name\cf2 :"
+\f1 \'8f\'bc\'8e\'52
+\f0 ", \cf3 areakey\cf2 :"380", \cf3 r1hls\cf2 :"http://netradiozkr1-i.akamaihd.net/hls/live/248056/1-r1/1-r1-01.m3u8", \cf3 r2hls\cf2 :"http://netradior2p-i.akamaihd.net/hls/live/200454/1-r2/1-r2-01.m3u8", \cf3 fmhls\cf2 :"http://netradiozkfm-i.akamaihd.net/hls/live/248204/1-fm/1-fm-01.m3u8"\}, \{\cf6 name\cf2 :"
+\f1 \'95\'9f\'89\'aa
+\f0 ", \cf3 areakey\cf2 :"400", \cf3 r1hls\cf2 :"http://netradiolkr1-i.akamaihd.net/hls/live/247879/1-r1/1-r1-01.m3u8", \cf3 r2hls\cf2 :"http://netradior2p-i.akamaihd.net/hls/live/200454/1-r2/1-r2-01.m3u8", \cf3 fmhls\cf2 :"http://netradiolkfm-i.akamaihd.net/hls/live/247890/1-fm/1-fm-01.m3u8"\}\}\
+		\
+		
+\b set
+\b0  \cf3 areaNameList\cf2  
+\b to
+\b0  \{\}\
+		
+\b repeat
+\b0  
+\b with
+\b0  \cf3 i\cf2  
+\b from
+\b0  1 
+\b to
+\b0  
+\i \cf4 number
+\i0 \cf2  
+\b of
+\b0  
+\i \cf4 items
+\i0 \cf2  
+\b in
+\b0  \cf3 areaRecord\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b set
+\b0  \cf3 this_item\cf2  
+\b to
+\b0  \cf6 name\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  \cf3 i\cf2  
+\b of
+\b0  \cf3 areaRecord\cf2 \
+			
+\b set
+\b0  
+\b end
+\b0  
+\b of
+\b0  \cf3 areaNameList\cf2  
+\b to
+\b0  \cf3 this_item\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b end
+\b0  
+\b repeat
+\b0 \
+		\
+		
+\b set
+\b0  \cf3 userInput\cf2  
+\b to
+\b0  (
+\b \cf7 choose from list
+\b0 \cf2  \cf3 areaNameList\cf2 ) 
+\b as
+\b0  
+\i \cf4 text
+\i0 \cf2 \
+		\
+		
+\b repeat
+\b0  
+\b with
+\b0  \cf3 i\cf2  
+\b from
+\b0  1 
+\b to
+\b0  
+\i \cf4 number
+\i0 \cf2  
+\b of
+\b0  
+\i \cf4 items
+\i0 \cf2  
+\b in
+\b0  \cf3 areaRecord\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b set
+\b0  \cf3 this_item\cf2  
+\b to
+\b0  \cf6 name\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  \cf3 i\cf2  
+\b of
+\b0  \cf3 areaRecord\cf2 \
+			
+\b if
+\b0  \cf3 this_item\cf2  
+\b is
+\b0  \cf3 userInput\cf2  
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li4162\fi-4163\pardirnatural\partightenfactor0
+\cf2 				
+\b set
+\b0  \cf3 userNumber\cf2  
+\b to
+\b0  \cf3 i\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b end
+\b0  
+\b if
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b end
+\b0  
+\b repeat
+\b0 \
+		\
+		\
+		\cf5 (*\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+\cf5 plistWrite(bID, "name", name of item userNumber of areaRecord)\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf5 		plistWrite(bID, "areakey", areakey of item userNumber of areaRecord)\
+		plistWrite(bID, "r1hls", r1hls of item userNumber of areaRecord)\
+		plistWrite(bID, "r2hls", r2hls of item userNumber of areaRecord)\
+		plistWrite(bID, "fmhls", fmhls of item userNumber of areaRecord)\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+\cf5 *)\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		\
+		\
+		\cf3 defaultsWrite\cf2 (\cf3 bID\cf2 , \{\cf6 name\cf2 :\cf6 name\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  \cf3 userNumber\cf2  
+\b of
+\b0  \cf3 areaRecord\cf2 , \cf3 areakey\cf2 :\cf3 areakey\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  \cf3 userNumber\cf2  
+\b of
+\b0  \cf3 areaRecord\cf2 , \cf3 r1hls\cf2 :\cf3 r1hls\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  \cf3 userNumber\cf2  
+\b of
+\b0  \cf3 areaRecord\cf2 , \cf3 r2hls\cf2 :\cf3 r2hls\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  \cf3 userNumber\cf2  
+\b of
+\b0  \cf3 areaRecord\cf2 , \cf3 fmhls\cf2 :\cf3 fmhls\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  \cf3 userNumber\cf2  
+\b of
+\b0  \cf3 areaRecord\cf2 \})\
+		\cf3 doInit\cf2 ()\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b end
+\b0  
+\b try
+\b0 \
+	\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  \cf3 doInit\cf2 \
+\
+
+\b on
+\b0  \cf3 playRadio\cf2 ()\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	\
+	
+\b set
+\b0  \cf3 theRecord\cf2  
+\b to
+\b0  \cf3 doInit\cf2 ()\
+	
+\b set
+\b0  \cf3 userInput\cf2  
+\b to
+\b0  \cf3 userInput\cf2 (\cf3 areakey\cf2  
+\b of
+\b0  \cf3 theRecord\cf2 )\
+	\
+	
+\b if
+\b0  \cf3 userInput\cf2  
+\b is
+\b0  4 
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		\cf3 plistAllDelete\cf2 (\cf3 bID\cf2 )\
+		\cf3 playRadio\cf2 ()\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b else
+\b0  
+\b if
+\b0  \cf3 userInput\cf2  
+\b is
+\b0  5 
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b set
+\b0  \cf3 jsonURL\cf2  
+\b to
+\b0  "http://api.nhk.or.jp/r2/pg/now/4/" & \cf3 areakey\cf2  
+\b of
+\b0  \cf3 theRecord\cf2  & "/netradio.json"\
+		\
+		
+\b set
+\b0  \cf3 nowRecord\cf2  
+\b to
+\b0  \cf3 downloadAndParseJSON\cf2 (\cf3 jsonURL\cf2 ) 
+\b of
+\b0  
+\b me
+\b0 \
+		\
+		
+\b set
+\b0  \{\cf3 n1Title\cf2 , \cf3 n2Title\cf2 , \cf3 n3Title\cf2 \} 
+\b to
+\b0  \{"
+\f1 \'97\'5c\'92\'e8\'82\'c8\'82\'b5
+\f0 ", "
+\f1 \'97\'5c\'92\'e8\'82\'c8\'82\'b5
+\f0 ", "
+\f1 \'97\'5c\'92\'e8\'82\'c8\'82\'b5
+\f0 "\}\
+		
+\b set
+\b0  \{\cf3 n1StartTime\cf2 , \cf3 n2StartTime\cf2 , \cf3 n3StartTime\cf2 \} 
+\b to
+\b0  \{"", "", ""\}\
+		
+\b set
+\b0  \{\cf3 n1Time\cf2 , \cf3 n2Time\cf2 , \cf3 n3Time\cf2 \} 
+\b to
+\b0  \{"", "", ""\}\
+		\
+		
+\b try
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b set
+\b0  \cf3 n1Title\cf2  
+\b to
+\b0  \cf3 title\cf2  
+\b of
+\b0  \cf3 following\cf2  
+\b of
+\b0  \cf3 n1\cf2  
+\b of
+\b0  \cf3 nowonair_list\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  1 
+\b of
+\b0  \cf3 nowRecord\cf2 \
+			
+\b set
+\b0  \cf3 n1StartTime\cf2  
+\b to
+\b0  \cf3 start_time\cf2  
+\b of
+\b0  \cf3 following\cf2  
+\b of
+\b0  \cf3 n1\cf2  
+\b of
+\b0  \cf3 nowonair_list\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  1 
+\b of
+\b0  \cf3 nowRecord\cf2 \
+			
+\b set
+\b0  \cf3 n1Time\cf2  
+\b to
+\b0  ((
+\i \cf4 characters
+\i0 \cf2  12 
+\b thru
+\b0  16 
+\b of
+\b0  \cf3 n1StartTime\cf2 ) 
+\b as
+\b0  
+\i \cf4 text
+\i0 \cf2 )\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b end
+\b0  
+\b try
+\b0 \
+		
+\b try
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b set
+\b0  \cf3 n2Title\cf2  
+\b to
+\b0  \cf3 title\cf2  
+\b of
+\b0  \cf3 following\cf2  
+\b of
+\b0  \cf3 n2\cf2  
+\b of
+\b0  \cf3 nowonair_list\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  1 
+\b of
+\b0  \cf3 nowRecord\cf2 \
+			
+\b set
+\b0  \cf3 n2StartTime\cf2  
+\b to
+\b0  \cf3 start_time\cf2  
+\b of
+\b0  \cf3 following\cf2  
+\b of
+\b0  \cf3 n2\cf2  
+\b of
+\b0  \cf3 nowonair_list\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  1 
+\b of
+\b0  \cf3 nowRecord\cf2 \
+			
+\b set
+\b0  \cf3 n2Time\cf2  
+\b to
+\b0  ((
+\i \cf4 characters
+\i0 \cf2  12 
+\b thru
+\b0  16 
+\b of
+\b0  \cf3 n2StartTime\cf2 ) 
+\b as
+\b0  
+\i \cf4 text
+\i0 \cf2 )\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b end
+\b0  
+\b try
+\b0 \
+		
+\b try
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b set
+\b0  \cf3 n3Title\cf2  
+\b to
+\b0  \cf3 title\cf2  
+\b of
+\b0  \cf3 following\cf2  
+\b of
+\b0  \cf3 n3\cf2  
+\b of
+\b0  \cf3 nowonair_list\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  1 
+\b of
+\b0  \cf3 nowRecord\cf2 \
+			
+\b set
+\b0  \cf3 n3StartTime\cf2  
+\b to
+\b0  \cf3 start_time\cf2  
+\b of
+\b0  \cf3 following\cf2  
+\b of
+\b0  \cf3 n3\cf2  
+\b of
+\b0  \cf3 nowonair_list\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  1 
+\b of
+\b0  \cf3 nowRecord\cf2 \
+			
+\b set
+\b0  \cf3 n3Time\cf2  
+\b to
+\b0  ((
+\i \cf4 characters
+\i0 \cf2  12 
+\b thru
+\b0  16 
+\b of
+\b0  \cf3 n3StartTime\cf2 ) 
+\b as
+\b0  
+\i \cf4 text
+\i0 \cf2 )\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b end
+\b0  
+\b try
+\b0 \
+		\
+		
+\b set
+\b0  \cf3 tmpList\cf2  
+\b to
+\b0  \{"1:
+\f1 \'83\'89\'83\'57\'83\'49\'91\'e6
+\f0 1 - " & \cf3 n1Title\cf2  & " - (" & \cf3 n1Time\cf2  & ")", "2:
+\f1 \'83\'89\'83\'57\'83\'49\'91\'e6
+\f0 2 - " & \cf3 n2Title\cf2  & " - (" & \cf3 n2Time\cf2  & ")", "3:NHK-FM - " & \cf3 n3Title\cf2  & " - (" & \cf3 n3Time\cf2  & ")"\}\
+		
+\b \cf7 choose from list
+\b0 \cf2  \cf3 tmpList\cf2 \
+		\
+		
+\b set
+\b0  \cf3 userInput\cf2  
+\b to
+\b0  \cf6 result\cf2  
+\b as
+\b0  
+\i \cf4 text
+\i0 \cf2 \
+		\
+		\
+		
+\b if
+\b0  \cf3 userInput\cf2  
+\b does not
+\b0  
+\b contain
+\b0  "
+\f1 \'97\'5c\'92\'e8\'82\'c8\'82\'b5
+\f0 " 
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b set
+\b0  \cf3 inputNumber\cf2  
+\b to
+\b0  
+\i \cf4 character
+\i0 \cf2  1 
+\b of
+\b0  \cf3 userInput\cf2  
+\b as
+\b0  
+\i \cf4 number
+\i0 \cf2 \
+			\
+			
+\b if
+\b0  \cf3 inputNumber\cf2  
+\b is
+\b0  1 
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li4162\fi-4163\pardirnatural\partightenfactor0
+\cf2 				
+\b set
+\b0  \cf3 startTime\cf2  
+\b to
+\b0  ((
+\i \cf4 characters
+\i0 \cf2  1 
+\b thru
+\b0  10 
+\b of
+\b0  \cf3 n1StartTime\cf2 ) 
+\b as
+\b0  
+\i \cf4 text
+\i0 \cf2 ) & " " & \cf3 n1Time\cf2 \
+				
+\b set
+\b0  \cf3 streamURL\cf2  
+\b to
+\b0  \cf3 r1hls\cf2  
+\b of
+\b0  \cf3 theRecord\cf2 \
+				
+\b set
+\b0  \cf3 nextTitle\cf2  
+\b to
+\b0  \cf3 n1Title\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b else
+\b0  
+\b if
+\b0  \cf3 inputNumber\cf2  
+\b is
+\b0  2 
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li4162\fi-4163\pardirnatural\partightenfactor0
+\cf2 				
+\b set
+\b0  \cf3 startTime\cf2  
+\b to
+\b0  ((
+\i \cf4 characters
+\i0 \cf2  1 
+\b thru
+\b0  10 
+\b of
+\b0  \cf3 n2StartTime\cf2 ) 
+\b as
+\b0  
+\i \cf4 text
+\i0 \cf2 ) & " " & \cf3 n2Time\cf2 \
+				
+\b set
+\b0  \cf3 streamURL\cf2  
+\b to
+\b0  \cf3 r2hls\cf2  
+\b of
+\b0  \cf3 theRecord\cf2 \
+				
+\b set
+\b0  \cf3 nextTitle\cf2  
+\b to
+\b0  \cf3 n2Title\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b else
+\b0  
+\b if
+\b0  \cf3 inputNumber\cf2  
+\b is
+\b0  3 
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li4162\fi-4163\pardirnatural\partightenfactor0
+\cf2 				
+\b set
+\b0  \cf3 startTime\cf2  
+\b to
+\b0  ((
+\i \cf4 characters
+\i0 \cf2  1 
+\b thru
+\b0  10 
+\b of
+\b0  \cf3 n3StartTime\cf2 ) 
+\b as
+\b0  
+\i \cf4 text
+\i0 \cf2 ) & " " & \cf3 n3Time\cf2 \
+				
+\b set
+\b0  \cf3 streamURL\cf2  
+\b to
+\b0  \cf3 fmhls\cf2  
+\b of
+\b0  \cf3 theRecord\cf2 \
+				
+\b set
+\b0  \cf3 nextTitle\cf2  
+\b to
+\b0  \cf3 n3Title\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b end
+\b0  
+\b if
+\b0 \
+			\
+			
+\b try
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li4162\fi-4163\pardirnatural\partightenfactor0
+\cf2 				
+\b \cf7 display notification
+\b0 \cf2  (\cf3 nextTitle\cf2  & "
+\f1 \'82\'f0
+\f0  " & 
+\i \cf4 characters
+\i0 \cf2  -1 
+\b thru
+\b0  -5 
+\b of
+\b0  \cf3 startTime\cf2  
+\b as
+\b0  
+\i \cf4 text
+\i0 \cf2 ) & " 
+\f1 \'82\'c9\'97\'5c\'96\'f1
+\f0 "\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b end
+\b0  
+\b try
+\b0 \
+			
+\b set
+\b0  \cf3 nextStreamURL\cf2  
+\b to
+\b0  \cf3 streamURL\cf2 \
+			\
+			
+\b set
+\b0  \cf3 previous_time\cf2  
+\b to
+\b0  (
+\b \cf7 current date
+\b0 \cf2 )\
+			
+\b set
+\b0  \cf3 start_time\cf2  
+\b to
+\b0  (
+\i \cf4 date
+\i0 \cf2  \cf3 startTime\cf2 ) - \cf3 previous_time\cf2 \
+			\
+			
+\b \cf4 idle
+\b0 \cf2  
+\b of
+\b0  
+\b me
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b end
+\b0  
+\b if
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b else
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b set
+\b0  \cf3 mpvPath\cf2  
+\b to
+\b0  \cf6 POSIX path\cf2  
+\b of
+\b0  (
+\b \cf7 path to
+\b0 \cf2  
+\b me
+\b0 ) & "Contents/Resources/mpv"\
+		\
+		
+\b if
+\b0  \cf3 userInput\cf2  
+\b is
+\b0  1 
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b set
+\b0  \cf3 streamURL\cf2  
+\b to
+\b0  \cf3 r1hls\cf2  
+\b of
+\b0  \cf3 theRecord\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b else
+\b0  
+\b if
+\b0  \cf3 userInput\cf2  
+\b is
+\b0  2 
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b set
+\b0  \cf3 streamURL\cf2  
+\b to
+\b0  \cf3 r2hls\cf2  
+\b of
+\b0  \cf3 theRecord\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b else
+\b0  
+\b if
+\b0  \cf3 userInput\cf2  
+\b is
+\b0  3 
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b set
+\b0  \cf3 streamURL\cf2  
+\b to
+\b0  \cf3 fmhls\cf2  
+\b of
+\b0  \cf3 theRecord\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b end
+\b0  
+\b if
+\b0 \
+		\
+		
+\b set
+\b0  \cf3 shellText\cf2  
+\b to
+\b0  \cf6 quoted form\cf2  
+\b of
+\b0  \cf3 mpvPath\cf2  & " " & \cf3 streamURL\cf2  & " > /dev/null 2>&1 &"\
+		
+\b \cf7 do shell script
+\b0 \cf2  \cf3 shellText\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b end
+\b0  
+\b if
+\b0 \
+	\
+	\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  \cf3 playRadio\cf2 \
+\
+
+\b on
+\b0  
+\b \cf4 run
+\b0 \cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	\cf3 playRadio\cf2 ()\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  
+\b \cf4 run
+\b0 \cf2 \
+\
+
+\b on
+\b0  
+\b \cf4 idle
+\b0 \cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	\
+	
+\b if
+\b0  \cf3 start_time\cf2  < 21600 
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		\
+		
+\b if
+\b0  ((
+\b \cf7 current date
+\b0 \cf2 ) - \cf3 previous_time\cf2 ) > 30 
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			\cf3 killMPV\cf2 ()\
+			
+\b set
+\b0  \cf3 mpvPath\cf2  
+\b to
+\b0  \cf6 POSIX path\cf2  
+\b of
+\b0  (
+\b \cf7 path to
+\b0 \cf2  
+\b me
+\b0 ) & "Contents/Resources/mpv"\
+			
+\b set
+\b0  \cf3 shellText\cf2  
+\b to
+\b0  \cf6 quoted form\cf2  
+\b of
+\b0  \cf3 mpvPath\cf2  & " " & \cf3 nextStreamURL\cf2  & " > /dev/null 2>&1 &"\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3142\fi-3143\pardirnatural\partightenfactor0
+\cf2 			
+\b \cf7 do shell script
+\b0 \cf2  \cf3 shellText
+\f2 \cf8 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2311\fi-2312\pardirnatural\partightenfactor0
+\cf8 			try
+\f0 \cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3142\fi-3143\pardirnatural\partightenfactor0
+\cf2 			
+\b \cf7 display notification
+\b0 \cf2  \cf3 nextTitle
+\f2 \cf8 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2311\fi-2312\pardirnatural\partightenfactor0
+\cf8 			end try
+\f0 \cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li3330\fi-3330\pardirnatural\partightenfactor0
+\cf2 			
+\b set
+\b0  \cf3 start_time\cf2  
+\b to
+\b0  604800\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b end
+\b0  
+\b if
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b end
+\b0  
+\b if
+\b0 \
+	\
+	
+\b return
+\b0  \cf3 start_time\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  
+\b \cf4 idle
+\b0 \cf2 \
+\
+
+\b on
+\b0  
+\b \cf4 quit
+\b0 \cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	\cf3 killMPV\cf2 ()\
+	
+\b set
+\b0  \cf3 start_time\cf2  
+\b to
+\b0  604800\
+	
+\b set
+\b0  \cf3 nextStreamURL\cf2  
+\b to
+\b0  
+\i \cf4 missing value
+\i0 \cf2 \
+	
+\b set
+\b0  \cf3 previous_time\cf2  
+\b to
+\b0  1\
+	
+\b continue
+\b0  
+\b \cf4 quit
+\b0 \cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  
+\b \cf4 quit
+\b0 \cf2 \
+\
+
+\b on
+\b0  
+\b \cf4 reopen
+\b0 \cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	\cf3 killMPV\cf2 ()\
+	\cf3 playRadio\cf2 ()\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  
+\b \cf4 reopen
+\b0 \cf2 \
+\
+
+\b on
+\b0  \cf3 killMPV\cf2 ()\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b try
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b \cf7 do shell script
+\b0 \cf2  "killall mpv"\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b end
+\b0  
+\b try
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  \cf3 killMPV\cf2 \
+\
+
+\b on
+\b0  \cf3 userInput\cf2 (\cf3 theAreakey\cf2 )\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	\
+	
+\b set
+\b0  \cf3 jsonURL\cf2  
+\b to
+\b0  "http://api.nhk.or.jp/r2/pg/now/4/" & \cf3 theAreakey\cf2  & "/netradio.json"\
+	\
+	
+\b set
+\b0  \cf3 nowRecord\cf2  
+\b to
+\b0  \cf3 downloadAndParseJSON\cf2 (\cf3 jsonURL\cf2 ) 
+\b of
+\b0  
+\b me
+\b0 \
+	
+\b set
+\b0  \{\cf3 n1Title\cf2 , \cf3 n2Title\cf2 , \cf3 n3Title\cf2 \} 
+\b to
+\b0  \{"
+\f1 \'94\'d4\'91\'67\'8b\'78\'8e\'7e\'92\'86
+\f0 ", "
+\f1 \'94\'d4\'91\'67\'8b\'78\'8e\'7e\'92\'86
+\f0 ", "
+\f1 \'94\'d4\'91\'67\'8b\'78\'8e\'7e\'92\'86
+\f0 "\}\
+	
+\b try
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b set
+\b0  \cf3 n1Title\cf2  
+\b to
+\b0  \cf3 title\cf2  
+\b of
+\b0  \cf3 present\cf2  
+\b of
+\b0  \cf3 n1\cf2  
+\b of
+\b0  \cf3 nowonair_list\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  1 
+\b of
+\b0  \cf3 nowRecord\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b end
+\b0  
+\b try
+\b0 \
+	
+\b try
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b set
+\b0  \cf3 n2Title\cf2  
+\b to
+\b0  \cf3 title\cf2  
+\b of
+\b0  \cf3 present\cf2  
+\b of
+\b0  \cf3 n2\cf2  
+\b of
+\b0  \cf3 nowonair_list\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  1 
+\b of
+\b0  \cf3 nowRecord\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b end
+\b0  
+\b try
+\b0 \
+	
+\b try
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b set
+\b0  \cf3 n3Title\cf2  
+\b to
+\b0  \cf3 title\cf2  
+\b of
+\b0  \cf3 present\cf2  
+\b of
+\b0  \cf3 n3\cf2  
+\b of
+\b0  \cf3 nowonair_list\cf2  
+\b of
+\b0  
+\i \cf4 item
+\i0 \cf2  1 
+\b of
+\b0  \cf3 nowRecord\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b end
+\b0  
+\b try
+\b0 \
+	
+\b set
+\b0  \cf3 tmpList\cf2  
+\b to
+\b0  \{"1:
+\f1 \'83\'89\'83\'57\'83\'49\'91\'e6
+\f0 1 - " & \cf3 n1Title\cf2 , "2:
+\f1 \'83\'89\'83\'57\'83\'49\'91\'e6
+\f0 2 - " & \cf3 n2Title\cf2 , "3:NHK-FM - " & \cf3 n3Title\cf2 , "4:
+\f1 \'92\'6e\'88\'e6\'90\'dd\'92\'e8\'82\'f0\'83\'8a\'83\'5a\'83\'62\'83\'67
+\f0 ", "5:
+\f1 \'8e\'9f\'82\'cc\'94\'d4\'91\'67\'82\'f0\'97\'5c\'96\'f1
+\f0 "\}\
+	
+\b \cf7 choose from list
+\b0 \cf2  \cf3 tmpList\cf2 \
+	
+\i \cf4 character
+\i0 \cf2  1 
+\b of
+\b0  (\cf6 result\cf2  
+\b as
+\b0  
+\i \cf4 text
+\i0 \cf2 ) 
+\b as
+\b0  
+\i \cf4 number
+\i0 \cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  \cf3 userInput\cf2 \
+\
+
+\b on
+\b0  \cf3 downloadAndParseJSON\cf2 (\cf3 aURL\cf2 )\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b set
+\b0  \cf3 aRes\cf2  
+\b to
+\b0  \cf3 downloadDataFromWeb\cf2 (\cf3 aURL\cf2 , 30) 
+\b of
+\b0  
+\b me
+\b0 \
+	
+\b if
+\b0  \cf3 aRes\cf2  = 
+\i \cf6 false
+\i0 \cf2  
+\b then
+\b0  
+\b return
+\b0  
+\i \cf6 false
+\i0 \cf2  \cf5 --download error\cf2 \
+	\
+	
+\b set
+\b0  \cf3 jsonString\cf2  
+\b to
+\b0  
+\i \cf6 current application's
+\i0 \cf2  \cf3 NSString's\cf2  \cf3 stringWithString\cf2 :\cf3 aRes\cf2 \
+	
+\b set
+\b0  \cf3 jsonData\cf2  
+\b to
+\b0  \cf3 jsonString's\cf2  \cf3 dataUsingEncoding\cf2 :(
+\i \cf6 current application's
+\i0 \cf2  \cf3 NSUTF8StringEncoding\cf2 )\
+	
+\b set
+\b0  \cf3 aJsonDict\cf2  
+\b to
+\b0  
+\i \cf6 current application's
+\i0 \cf2  \cf3 NSJSONSerialization's\cf2  \cf3 JSONObjectWithData\cf2 :\cf3 jsonData\cf2  \cf3 options\cf2 :0 \cf3 |error|\cf2 :(
+\i \cf4 missing value
+\i0 \cf2 )\
+	\
+	\cf5 ----record
+\f1 \'82\'c6\'82\'b5\'82\'c4\'95\'5d\'89\'bf\'82\'b5\'82\'c4\'95\'d4\'82\'b7
+\f0 \cf2 \
+	
+\b try
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b set
+\b0  \cf3 aRec\cf2  
+\b to
+\b0  \cf3 aJsonDict\cf2  
+\b as
+\b0  
+\i \cf4 record
+\i0 \cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b end
+\b0  
+\b try
+\b0 \
+	\cf5 ----record
+\f1 \'82\'cc
+\f0 list
+\f1 \'82\'c6\'82\'b5\'82\'c4\'95\'5d\'89\'bf\'82\'b5\'82\'c4\'95\'d4\'82\'b7
+\f0 \cf2 \
+	
+\b try
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b set
+\b0  \cf3 aRec\cf2  
+\b to
+\b0  \cf3 aJsonDict\cf2  
+\b as
+\b0  
+\i \cf4 list
+\i0 \cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b on
+\b0  
+\b error
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b return
+\b0  
+\i \cf6 false
+\i0 \cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b end
+\b0  
+\b try
+\b0 \
+	\cf5 -----\cf2 \
+	
+\b return
+\b0  \cf3 aRec\cf2 \
+	\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  \cf3 downloadAndParseJSON\cf2 \
+\
+\
+
+\b on
+\b0  \cf3 downloadDataFromWeb\cf2 (\cf3 aURL\cf2 , \cf3 timeOutSec\cf2 )\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b set
+\b0  \cf3 aURL\cf2  
+\b to
+\b0  
+\i \cf6 current application's
+\i0 \cf2  \cf3 |NSURL|'s\cf2  \cf3 alloc\cf2 ()'s \cf3 initWithString\cf2 :\cf3 aURL\cf2 \
+	
+\b set
+\b0  \cf3 aReq\cf2  
+\b to
+\b0  
+\i \cf6 current application's
+\i0 \cf2  \cf3 NSURLRequest's\cf2  \cf3 alloc\cf2 ()'s \cf3 initWithURL\cf2 :\cf3 aURL\cf2  \cf3 cachePolicy\cf2 :(
+\i \cf6 current application's
+\i0 \cf2  \cf3 NSURLRequestReloadIgnoringLocalCacheData\cf2 ) \cf3 timeoutInterval\cf2 :\cf3 timeOutSec\cf2 \
+	
+\b set
+\b0  \cf3 urlRes\cf2  
+\b to
+\b0  (
+\i \cf6 current application's
+\i0 \cf2  \cf3 NSURLConnection's\cf2  \cf3 sendSynchronousRequest\cf2 :\cf3 aReq\cf2  \cf3 returningResponse\cf2 :(
+\i \cf4 missing value
+\i0 \cf2 ) \cf3 |error|\cf2 :(
+\i \cf4 missing value
+\i0 \cf2 ))\
+	\
+	
+\b if
+\b0  \cf3 urlRes\cf2  = 
+\i \cf4 missing value
+\i0 \cf2  
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b return
+\b0  
+\i \cf6 false
+\i0 \cf2  \cf5 --Download Error\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b else
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b set
+\b0  \cf3 aVal\cf2  
+\b to
+\b0  (
+\i \cf6 current application's
+\i0 \cf2  \cf3 NSString's\cf2  \cf3 alloc\cf2 ()'s \cf3 initWithData\cf2 :\cf3 urlRes\cf2  \cf3 encoding\cf2 :(
+\i \cf6 current application's
+\i0 \cf2  \cf3 NSUTF8StringEncoding\cf2 ))\
+		
+\b return
+\b0  \cf3 aVal\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b end
+\b0  
+\b if
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  \cf3 downloadDataFromWeb\cf2 \
+\
+
+\b on
+\b0  \cf3 plistWrite\cf2 (\cf3 bID\cf2 , \cf3 theKey\cf2 , \cf3 theValue\cf2 )\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b set
+\b0  \cf3 shellText\cf2  
+\b to
+\b0  "defaults write " & \cf3 bID\cf2  & " '" & \cf3 theKey\cf2  & "' -string '" & \cf3 theValue\cf2  & "'"\
+	
+\b \cf7 do shell script
+\b0 \cf2  \cf3 shellText\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  \cf3 plistWrite\cf2 \
+\
+
+\b on
+\b0  \cf3 plistDelete\cf2 (\cf3 bID\cf2 , \cf3 theKey\cf2 )\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b set
+\b0  \cf3 shellText\cf2  
+\b to
+\b0  "defaults delete " & \cf3 bID\cf2  & " " & \cf6 quoted form\cf2  
+\b of
+\b0  \cf3 theKey\cf2 \
+	
+\b \cf7 do shell script
+\b0 \cf2  \cf3 shellText\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  \cf3 plistDelete\cf2 \
+\
+
+\b on
+\b0  \cf3 plistAllDelete\cf2 (\cf3 bID\cf2 )\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b set
+\b0  \cf3 shellText\cf2  
+\b to
+\b0  "defaults delete " & \cf3 bID\cf2 \
+	
+\b \cf7 do shell script
+\b0 \cf2  \cf3 shellText\cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  \cf3 plistAllDelete\cf2 \
+\
+
+\b on
+\b0  \cf3 defaultsRead\cf2 (\cf3 domain\cf2  
+\b as
+\b0  
+\i \cf4 text
+\i0 \cf2 )\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	\cf5 --require framework: Foundation\cf2 \
+	
+\b set
+\b0  \cf3 defaults\cf2  
+\b to
+\b0  
+\i \cf6 current application's
+\i0 \cf2  \cf3 NSUserDefaults's\cf2  \cf3 standardUserDefaults\cf2 ()\
+	
+\b return
+\b0  (\cf3 defaults's\cf2  \cf3 persistentDomainForName\cf2 :\cf3 domain\cf2 ) 
+\b as
+\b0  
+\i \cf4 record
+\i0 \cf2 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  \cf3 defaultsRead\cf2 \
+\
+
+\b on
+\b0  \cf3 defaultsWrite\cf2 (\cf3 domain\cf2  
+\b as
+\b0  
+\i \cf4 text
+\i0 \cf2 , \cf3 writeDictionary\cf2  
+\b as
+\b0  
+\i \cf4 record
+\i0 \cf2 )\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	\cf5 --require framework: Foundation\cf2 \
+	
+\b set
+\b0  \cf3 defaults\cf2  
+\b to
+\b0  
+\i \cf6 current application's
+\i0 \cf2  \cf3 NSUserDefaults's\cf2  \cf3 standardUserDefaults\cf2 ()\
+	
+\b set
+\b0  \cf3 preferencesDictionary\cf2  
+\b to
+\b0  (\cf3 defaults's\cf2  \cf3 persistentDomainForName\cf2 :\cf3 domain\cf2 )'s \cf3 mutableCopy\cf2 ()\
+	\cf3 preferencesDictionary's\cf2  \cf3 addEntriesFromDictionary\cf2 :\cf3 writeDictionary\cf2 \
+	\cf3 defaults's\cf2  \cf3 setPersistentDomain\cf2 :\cf3 preferencesDictionary\cf2  \cf3 forName\cf2 :\cf3 domain\cf2 \
+	
+\b my
+\b0  \cf3 defaultsSynchronize\cf2 ()\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  \cf3 defaultsWrite\cf2 \
+\
+
+\b on
+\b0  \cf3 defaultsDelete\cf2 (\cf3 domain\cf2  
+\b as
+\b0  
+\i \cf4 text
+\i0 \cf2 , \cf3 deleteKeys\cf2  
+\b as
+\b0  
+\i \cf4 list
+\i0 \cf2 )\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	\cf5 --require framework: Foundation\cf2 \
+	
+\b set
+\b0  \cf3 defaults\cf2  
+\b to
+\b0  
+\i \cf6 current application's
+\i0 \cf2  \cf3 NSUserDefaults's\cf2  \cf3 standardUserDefaults\cf2 ()\
+	
+\b set
+\b0  \cf3 preferencesDictionary\cf2  
+\b to
+\b0  (\cf3 defaults's\cf2  \cf3 persistentDomainForName\cf2 :\cf3 domain\cf2 )'s \cf3 mutableCopy\cf2 ()\
+	\cf3 preferencesDictionary's\cf2  \cf3 removeObjectsForKeys\cf2 :\cf3 deleteKeys\cf2 \
+	\cf3 defaults's\cf2  \cf3 setPersistentDomain\cf2 :\cf3 preferencesDictionary\cf2  \cf3 forName\cf2 :\cf3 domain\cf2 \
+	
+\b my
+\b0  \cf3 defaultsSynchronize\cf2 ()\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  \cf3 defaultsDelete\cf2 \
+\
+
+\b on
+\b0  \cf3 defaultsSynchronize\cf2 ()\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	\cf5 --require framework: Foundation\cf2 \
+	
+\b set
+\b0  \cf3 success\cf2  
+\b to
+\b0  
+\i \cf6 current application's
+\i0 \cf2  \cf3 NSUserDefaults's\cf2  \cf3 standardUserDefaults\cf2 ()'s \cf3 synchronize\cf2 ()\
+	
+\b if
+\b0  
+\b not
+\b0  \cf3 success\cf2  
+\b then
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li2497\fi-2498\pardirnatural\partightenfactor0
+\cf2 		
+\b error
+\b0  "Synchronization in NSUserDefaults has failed"\
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li1665\fi-1665\pardirnatural\partightenfactor0
+\cf2 	
+\b end
+\b0  
+\b if
+\b0 \
+\pard\tx577\tx1155\tx1733\tx2311\tx2889\tx3467\tx4045\tx4623\tx5201\tx5779\tx6357\tx6935\tx7513\tx8091\tx8669\tx9247\tx9825\tx10403\tx10981\tx11559\tx12137\tx12715\tx13293\tx13871\tx14449\tx15027\tx15605\tx16183\tx16761\tx17339\tx17917\tx18495\tx19072\tx19650\tx20228\tx20806\tx21384\tx21962\tx22540\tx23118\tx23696\tx24274\tx24852\tx25430\tx26008\tx26586\tx27164\tx27742\tx28320\tx28898\tx29476\tx30054\tx30632\tx31210\tx31788\tx32366\tx32944\tx33522\tx34100\tx34678\tx35256\tx35834\tx36412\tx36990\tx37567\tx38145\tx38723\tx39301\tx39879\tx40457\tx41035\tx41613\tx42191\tx42769\tx43347\tx43925\tx44503\tx45081\tx45659\tx46237\tx46815\tx47393\tx47971\tx48549\tx49127\tx49705\tx50283\tx50861\tx51439\tx52017\tx52595\tx53173\tx53751\tx54329\tx54907\tx55485\tx56062\tx56640\tx57218\tx57796\li832\fi-833\pardirnatural\partightenfactor0
+
+\b \cf2 end
+\b0  \cf3 defaultsSynchronize}
